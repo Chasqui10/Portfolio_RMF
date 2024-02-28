@@ -25,8 +25,9 @@ export default function Home() {
       <div className="container pt-4">
         <div className="row">
           {projects.map((project) => (
-            <ListItem key={project.id} project={project} />
-            <Project key={project.id} project={project} />
+            <ListItem key={project.id}>
+              <Project key={project.id} project={project} />
+            </ListItem>
           ))}
         </div>
       </div>
